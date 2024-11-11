@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/material/icon.png">
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <article class="calc">
+    <table class="table"> 
+        <tr> 
+            <td colspan="3"> 
+                <!-- <input type="text" id="result" class="result">  -->
+                <p id="result" class="calc__result"></p>
+            </td> 
+            <td><input type="button" value="c" class="button delete"></td> 
+        </tr> 
+  
+        <tr> 
+            <td><input type="button" value="1" class="button number"></td> 
+            <td><input type="button" value="2" class="button number"></td> 
+            <td><input type="button" value="3" class="button number"></td> 
+            <!-- <td><input type="button" value="/" class="button"></td>  -->
+            <td><button class='button' value="/" onclick="division()">/</button></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="4" class="button number"></td> 
+            <td><input type="button" value="5" class="button number"></td> 
+            <td><input type="button" value="6" class="button number"></td> 
+            <!-- <td><input type="button" value="*" class="button"></td>  -->
+            <td><button class='button' value="*" onclick="multiplication()">*</button></td>  
+        </tr> 
+        <tr> 
+            <td><input type="button" value="7" class="button number"></td> 
+            <td><input type="button" value="8" class="button number"></td> 
+            <td><input type="button" value="9" class="button number"></td> 
+            <!-- <td><input type="button" value="-" class="button"></td>  -->
+            <td><button class='button' value="-" onclick="substraction()">-</button></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="0" class="button number"></td> 
+            <td><button type="button" class="button enter" onclick="calculation()"> = </button></td> 
+            
+            <td><input type="button" value="." class="button"></td> 
+            <!-- <td><input type="button" value="+" class="button"></td>  -->
+            <td><button class='button' value="+" onclick="addition()">+</button></td> 
+        </tr> 
+    </table> 
+</article>
+
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
